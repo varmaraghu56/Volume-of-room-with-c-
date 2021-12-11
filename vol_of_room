@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+class Room
+{
+
+	public:
+		int a,b,c,vol;
+	void read()
+	{
+		cout<<"lenght = ";
+		cin>>a;
+		cout<<"breadth = ";
+		cin>>b;
+		cout<<"height = ";
+		cin>>c;
+	}
+	void volume()
+	{
+	  vol= a*b*c;
+	}
+	void display()
+	{
+		cout<<"The volume is = "<<vol;
+	}
+	
+};
+int main()
+{
+	Room obj1;
+	obj1.read();
+	obj1.volume();
+	obj1.display();
+	return 0;
+}
